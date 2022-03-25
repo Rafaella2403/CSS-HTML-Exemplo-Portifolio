@@ -1,5 +1,5 @@
 .experiencia {
-  max-width: 1200px;
+  max-width: 1500px;
   padding: 40px 20px;
   margin: 0 auto;
   display: grid;
@@ -12,7 +12,7 @@
 }
 
 .experiencia-texto {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.33;
   max-width: 40ch;
   margin-bottom: 60px;
@@ -56,13 +56,13 @@
 }
 
 .empresa-titulo {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   line-height: 1.1;
   font-weight: bold;
 }
 
 .empresa-texto {
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   line-height: 1.4;
   color: #525252;
 }
@@ -75,7 +75,7 @@
 }
 
 .empresa-habilidades li {
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   line-height: 1.4;
   border-radius: 4px;
   background: #ffffff;
