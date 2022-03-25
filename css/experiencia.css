@@ -3,7 +3,117 @@
     padding: 2.5rem 1.25rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr fr;
-    gap: 6.25rem;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
 }
 
+.experiencia .subtitulo{
+    color: #E0E0E0;
+}
+
+.experiencia-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 4rem;
+    max-width: 40ch;
+    color: #525252;
+}
+
+.experiencia-texto strong{
+    color: #141414;
+}
+
+.empresa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.25rem;
+    background-color: #F5F5F5;
+    margin-bottom: 1.25rem;
+    border-radius: 0.25rem;
+    position: relative;
+    gap: 10px 20px;
+}
+
+.empresa-ano{
+    position: absolute;
+    top: 1.40rem;
+    left: -6.25rem;
+    color: #525252;
+    font-size: 0.875rem;
+    width: 5rem;
+    text-align: right;
+}
+
+.empresa::before{
+    content: "";
+    display: block;
+    width: 0.25rem;
+    height: 1.25rem;
+    background: linear-gradient(#B6F829, #67DD0A);
+    position: absolute;
+    top: 1.25rem;
+    left: -0.25rem;
+}
+.empresa-titulo{
+    font-size: 1.12rem;
+    line-height: 1.1;
+    font-weight: bolder;
+}
+
+.empresa-texto{
+    font-size: 0.875rem;
+    color: #525252;
+    line-height: 1.5;
+}
+
+.empresa-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.empresa-habilidades li{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 0.25rem;
+    background: #FFF;
+    padding: 0.25rem 0.625rem;
+}
+
+@media (max-width: 800px){
+
+    .experiencia{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experiencia .subtitulo{
+        color: #141414;
+    }
+
+    .empresa-texto{
+        font-size: 1.25rem;
+    }
+
+    .empresa-ano{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+        font-size: 1.25rem;
+    }
+
+    .empresa-ano::before{
+        content: "Período: ";
+    }
+
+}
+
+@media (max-width: 400px){
+
+    .empresa{
+        grid-template-columns: 1fr;
+    }
+
+}
