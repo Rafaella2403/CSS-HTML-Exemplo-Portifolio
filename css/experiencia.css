@@ -1,0 +1,9 @@
+.experiencia{
+    max-width: 72rem;
+    padding: 2.5rem 1.25rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr fr;
+    gap: 6.25rem;
+}
+
